@@ -1,0 +1,21 @@
+{
+  "name": "minchao/taiwan-working-days",
+  "description": "A Taiwan working days library for PHP",
+  "keywords": [
+    "taiwan",
+    "working-days"
+  ],
+  "homepage": "https://github.com/minchao/taiwan-working-days",
+  "type": "library",
+  "require": {
+    "php": ">=5.6"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "TaiwanWorkingDays\\": "src/TaiwanWorkingDays/"
+    }
+  }
+}
