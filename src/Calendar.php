@@ -2,6 +2,6 @@
 
 namespace TaiwanWorkingDays;
 
-class TaiwanWorkingDays
+class Calendar
 {
 }
