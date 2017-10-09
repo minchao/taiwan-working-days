@@ -16,7 +16,12 @@
   },
   "autoload": {
     "psr-4": {
-      "TaiwanWorkingDays\\": "src/TaiwanWorkingDays/"
+      "TaiwanWorkingDays\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
     }
   }
 }
