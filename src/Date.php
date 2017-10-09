@@ -55,18 +55,18 @@ class Date extends \DateTime
     }
 
     /**
-     * @param string $date
+     * @param string $dateStr
      * @param bool $isWorkingDay
      * @param string $note
      *
      * @return Date
      */
-    public static function create($date, $isWorkingDay, $note = '')
+    public static function create($dateStr, $isWorkingDay, $note = '')
     {
-        $d = new self($date, new \DateTimeZone('Asia/Taipei'));
-        $d->isWorkingDay = $isWorkingDay;
-        $d->note = $note;
+        $date = new self($dateStr, new \DateTimeZone('Asia/Taipei'));
+        $date->isWorkingDay = $isWorkingDay;
+        $date->note = $note;
 
-        return $d;
+        return $date;
     }
 }
