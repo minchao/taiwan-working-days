@@ -2,16 +2,12 @@
 
 namespace TaiwanWorkingDays;
 
-/**
- * Class Date
- * @package TaiwanWorkingDays
- */
 class Date extends \DateTime
 {
     /**
      * @var bool
      */
-    protected $isHoliday = false;
+    protected $isWorkingDay = false;
 
     /**
      * @var string
@@ -21,19 +17,19 @@ class Date extends \DateTime
     /**
      * @return bool
      */
-    public function isHoliday()
+    public function isWorkingDay()
     {
-        return $this->isHoliday;
+        return $this->isWorkingDay;
     }
 
     /**
-     * @param bool $isHoliday
+     * @param bool $isWorkingDay
      *
      * @return $this
      */
-    public function setIsHoliday($isHoliday)
+    public function setIsWorkingDay($isWorkingDay)
     {
-        $this->isHoliday = $isHoliday;
+        $this->isWorkingDay = $isWorkingDay;
 
         return $this;
     }
@@ -60,15 +56,15 @@ class Date extends \DateTime
 
     /**
      * @param string $date
-     * @param bool $isHoliday
+     * @param bool $isWorkingDay
      * @param string $note
      *
      * @return Date
      */
-    public static function create($date, $isHoliday, $note = '')
+    public static function create($date, $isWorkingDay, $note = '')
     {
         $d = new self($date, new \DateTimeZone('Asia/Taipei'));
-        $d->isHoliday = $isHoliday;
+        $d->isWorkingDay = $isWorkingDay;
         $d->note = $note;
 
         return $d;
