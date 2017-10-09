@@ -2,6 +2,8 @@
 
 namespace TaiwanWorkingDays;
 
-class Calendar
+use TaiwanWorkingDays\Common\ArrayCollection;
+
+class Calendar extends ArrayCollection
 {
 }
