@@ -4,6 +4,7 @@ composer.lock
 
 # PHPUnit
 # see https://stackoverflow.com/a/44764078
+build/
 phpunit.xml
 
 # IntelliJ IDEA project files
